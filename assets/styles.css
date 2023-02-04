@@ -26,33 +26,6 @@ body {
   background-color: #3b6437;
 }
 
- header{
-    margin-top: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #3b6437;
-  margin-right: initial;
-  padding-left: 0;
-}
-
-.anniraid{
-    max-height: 80%;
-    width: 105%;
-    margin-left: -60px;
-    align-self: right;
-    position: static;
-
-}
-
-.topbar {
-    color: #bfd6b7;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: thin;
-    position: static;
-    margin-left: 290px;
-    line-height: 1;
-}
 
 #navbar ul {
   height: 88%;
@@ -77,6 +50,33 @@ body {
   cursor: pointer;
 }
 
+header{
+  margin-top: 20px;
+padding-top: 5px;
+padding-bottom: 5px;
+background-color: #3b6437;
+margin-right: initial;
+padding-left: 0;
+}
+
+.anniraid{
+  max-height: 80%;
+  width: 105%;
+  margin-left: -60px;
+  align-self: right;
+  position: static;
+
+}
+
+.topbar {
+  color: #bfd6b7;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: thin;
+  position: static;
+  margin-left: 290px;
+  line-height: 1;
+}
 
 h2 {
   margin-right: initial;
@@ -97,15 +97,19 @@ h2 {
     text-align: center;
     background-color: #c3d5c0;
     border: 4px solid black;
-    font-size: smaller;
     margin-bottom: 40px;
 }
 
+thead tr.rowbox{
+  font-size: 90%;
+  word-break: break-all;
+  white-space: normal;
+}
 
 .cap1, .cap2, .cap3, .cap4, .cap5, .cap6, .cap7 {
     border: 4px solid black;
     border-bottom: 0;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .cap1{
@@ -147,10 +151,6 @@ h2 {
     border: 4px solid black;
     border-bottom: 0;
     height: 10px; 
-}
-
-.rowbox2{
-  border-collapse: separate; border-spacing: auto;
 }
 
 .pokesprite3 .pokes{
