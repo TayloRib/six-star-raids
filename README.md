@@ -1,2 +1,2 @@
-# six-star-raids
-Guide for Six Star Raid Drops
+# five-star-raids
+How to obtain Herba Mystica from 5-star Raids

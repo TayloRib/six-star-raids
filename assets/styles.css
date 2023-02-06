@@ -2,12 +2,13 @@
 html,
 body {
   min-width: 290px;
-    color: #bfd6b7;
+  color: #bfd6b7;
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.5;
   background-color:#092f12;
   margin: 0;
 }
+
 
 
 #navbar {
@@ -16,7 +17,7 @@ body {
   min-width: 200px;
   top: 0px;
   left: 0px;
-  width: 250px;
+  width: 200px;
   height: 100%;
   border-right: 10px solid;
   border-color: #021b00;
@@ -27,7 +28,6 @@ body {
   background-color: #3b6437;
 }
 
-
 #navbar ul {
   height: 88%;
   padding: 0;
@@ -35,48 +35,96 @@ body {
   overflow-x: hidden;
 }
 
-#navbar li {
-  color: #4d4e53;
-  border-top: 1px solid;
-  list-style: none;
-  position: relative;
-  width: 100%;
+.navbar1{
+  border-top: 3px solid #021b00;
 }
 
-#navbar a {
+.navbar2{
+  border-top: 3px solid #021b00;
+  border-bottom: 3px solid #021b00;
+}
+
+#navbar a, #navtable a{
   display: block;
-  padding: 10px 30px;
   color: #bfd6b7;
   text-decoration: none;
   cursor: pointer;
 }
 
+#navbar a{
+  padding: 10px 30px;
+}
+
+#navtable{
+  width: 100%;
+  color: #bfd6b7;
+  text-align: center;
+  align-items: center;
+  font-size: small;
+  line-height: 2;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+#navtable td{
+  border: 2px solid #021b00;
+  background-color: #184d24;
+}
+
+.mobiletop{
+  display: block;
+  position: center;
+  margin-left: 0;
+  margin-top: 15px;
+  background-color: #3b6437;
+  position: static;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
 header{
-  margin-top: 20px;
-padding-top: 5px;
-padding-bottom: 5px;
-background-color: #3b6437;
-margin-right: initial;
-padding-left: 0;
+  text-align: center;
+  margin-top: 15px;
+  background-color: #3b6437;
+  position: static;
+  padding-left: 0;
+  padding-right: 0;
+  border-top: 4px solid #021b00;
+  border-bottom: 4px solid #021b00;
+
 }
 
 .anniraid{
   max-height: 80%;
-  width: 105%;
-  margin-left: -60px;
-  align-self: right;
-  position: static;
+  width: 100%;
+  position: ;
+  border: 3px solid #021b00;
+}
 
+.sixstar{
+  max-height: 80%;
+  width: 100%;
+  position: relative;
+  border: 3px solid #021b00;
 }
 
 .topbar {
+  margin-left: 200px;
   color: #bfd6b7;
   text-align: center;
   font-size: 1.2em;
-  font-weight: thin;
   position: static;
-  margin-left: 290px;
-  line-height: 1;
+  line-height: .8;
+  padding-bottom: 10px;
+}
+
+
+h3{
+  padding-left: 10px;
 }
 
 h2 {
@@ -86,10 +134,75 @@ h2 {
 }
 
 #main-doc {
-  position: absolute;
-  margin-left: 290px;
-  padding: 20px;
-  margin-bottom: 110px;
+  position: relative;
+  max-width: 100%;
+  margin-left: 250px;
+  margin-right: 30px;
+  padding: 5px 20px 20px 5px;
+  margin-bottom: 20px;
+}
+
+#table3 {
+  display: inline-block;
+  width: 20%;
+  color: black;
+  text-align: center;
+  margin-bottom: 40px;
+  align-items: center;
+  border: 0;
+  align: left;
+}
+
+.table-container { 
+  display: inline-block; 
+  vertical-align: top; 
+}
+
+thead.bughead{
+  background-color: #565711;
+}
+
+.typebub2 {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: center;
+  max-height: 100%;
+}
+
+.bughead{
+  background-color: #565711;
+  font-size: large;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.bughead{
+  background-color: #565711;
+}
+
+.goodmatch1{
+  background-color: #3b6437;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.goodmatch2{
+  background-color: #73a76e;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.badmatch1{
+  background-color: #7a2d2d;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.badmatch2{
+  background-color: #b67575;
+  text-align: center;
+  border: 2px solid black;
 }
 
 #table1, #table2 {
@@ -97,14 +210,24 @@ h2 {
     color: black;
     text-align: center;
     background-color: #c3d5c0;
-    border: 4px solid black;
     margin-bottom: 40px;
+    align-items: center;
 }
 
-thead tr.rowbox{
-  font-size: 90%;
-  word-break: break-all;
-  white-space: normal;
+#table1{
+  border: 4px solid black;
+}
+
+#table2{
+  border: 3px solid black;
+  font-size: x-small;
+}
+
+
+td{
+  position: relative;
+
+
 }
 
 .cap1, .cap2, .cap3, .cap4, .cap5, .cap6, .cap7 {
@@ -113,37 +236,43 @@ thead tr.rowbox{
     font-size: 1.2em;
 }
 
-.cap1{
+.cip1, .cip2, .cip3, .cip4, .cip5, .cip6, .cip7{
+    border: 3px solid black;
+    border-bottom: 0;
+    font-size: 1.5em;
+}
+
+.cap1, .cip1{
   color: #131300;
   background-color: #cd7f32;
 }
 
-.cap2{
+.cap2, .cip2{
   color: #131300;
   background-color: #768c9d;
 }
 
-.cap3{
+.cap3, .cip3{
   color: #131300;
   background-color: #dfc42a;
 }
 
-.cap4{
+.cap4, .cip4{
   color: #131300;
   background-color: #ddf5f8;
 }
 
-.cap5{
+.cap5, .cip5{
   color: #131300;
   background-color: #557522;
 }
 
-.cap6{
+.cap6, .cip6{
   color: #131300;
   background-color: #ddc3d5;
 }
 
-.cap7{
+.cap7, .cip7{
   color: #131300;
   background-color: #9c2b2b;
 }
@@ -154,7 +283,7 @@ thead tr.rowbox{
     height: 10px; 
 }
 
-.pokesprite3 .pokes{
+.pokesprite3 .pokes {
     display: inline-flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -218,11 +347,10 @@ figcaption {
 }
 
 
-.mobileHide
-{ display: none;}
 
 
-@media only screen and (max-width: 480px) {
+
+@media screen and (max-width: 480px) {
   /* For mobile phones: */
   #navbar ul {
     height: 100%;
@@ -241,10 +369,15 @@ figcaption {
     z-index: 1;
   }
 
+  .mobileonly{
+    display: relative;
+  }
+
   #main-doc {
     position: relative;
-    margin-left: 0px;
-    margin-top: 270px;
+    margin-top: 0px;
+    margin-left: 3%;
+    margin-right: 1%;
   }
 
   .table1, .table2{
@@ -253,6 +386,61 @@ figcaption {
 
   .nomobile {
     display:none;
+  }
 }
 
+
+@media screen and (min-width: 480px) {
+  .nomobile{
+    display: relative;
+  }
+  
+  .mobileonly{ 
+    display: none;
+  }
+
+  
 }
+
+/* 
+Storage Space for new type tables
+
+bro fix my folder name :'(
+
+<div class="table-container">
+      <table id="table3">
+        <thead class="bughead">
+          <caption class="bughead">Bug Type</caption>
+        <tr>
+          <td class="goodmatch1">Good Match-up</td>
+          <td class="goodmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/fire_bubble.png" alt="fire type"></img></td>
+          <td class="goodmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/flying_bubble.png" alt="flying type"></img></td>
+          <td class="goodmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/rock_bubble.png" alt="rock type"></img></td>
+        </tr>
+        <tr>
+          <td class="badmatch1">Bad Match-up</td>
+          <td class="badmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/grass_bubble.png" alt="grass type"></img></td>
+          <td class="badmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/psychic_bubble.png" alt="psychic type"></img></td>
+          <td class="badmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/dark_bubble.png" alt="dark type"></img></td>
+        </tr>
+        </thead>
+    </table>
+
+      <table id="table4">
+        <thead class="darkhead">
+          <caption class="darkhead">Bug Type</caption>
+        <tr>
+          <td class="goodmatch1">Good Match-up</td>
+          <td class="goodmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/fire_bubble.png" alt="fire type"></img></td>
+          <td class="goodmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/flying_bubble.png" alt="flying type"></img></td>
+          <td class="goodmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/rock_bubble.png" alt="rock type"></img></td>
+        </tr>
+        <tr>
+          <td class="badmatch1">Bad Match-up</td>
+          <td class="badmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/grass_bubble.png" alt="grass type"></img></td>
+          <td class="badmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/psychic_bubble.png" alt="psychic type"></img></td>
+          <td class="badmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/dark_bubble.png" alt="dark type"></img></td>
+        </tr>
+      </thead>
+    </table>
+    </div> */
