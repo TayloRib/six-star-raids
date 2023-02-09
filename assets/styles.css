@@ -323,144 +323,124 @@ a:hover {
 
 table#typing {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  border: 0;
+  display: inline-block;
+  border-spacing: 0;
 }
 
-.typebub2 {
+table#typing2 {
+  width: 100%;
+  margin-bottom: 0;
+  border: 0;
+  display: inline-block;
+  border-spacing: 0;
+}
+
+
+.typebub2, .typebub3{
   display: inline-flex;
   justify-content: space-between;
   align-items: flex-end;
   align-self: center;
-  max-height: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 10px;
 }
 
-.matchup, .steelhead, .waterhead, .normalhead, .poisonhead, .psychichead, .rockhead, .ghosthead, .grasshead, .groundhead, .icehead, .bughead, .darkhead, .dragonhead, .electrichead, .fairyhead, .fightinghead, .firehead, .flyinghead{
-  font-size: large;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 5px;
+.typebub2{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
+.typebub3{
+  padding: 5px;
+  padding-bottom: 5px;
+}
+
+.steelhead, .waterhead, .normalhead, .poisonhead, .psychichead, .rockhead, .ghosthead, .grasshead, .groundhead, .icehead, .bughead, .darkhead, .dragonhead, .electrichead, .fairyhead, .fightinghead, .firehead, .flyinghead{
+  text-align: center;
+  background-color: #c3d5c0;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  line-height: 0;
+}
+
+.midspacer {
+  background-color: #c3d5c0;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
 
 .matchup{
   background-color: #8f860b;
   color: black;
-}
-
-.steelhead{
-  background-color: #4e919c;
-  color: black;
-}
-
-.waterhead{
-  background-color: #298fb8;
-  color: black;
-}
-.normalhead{
-  background-color: #6b6b6b;
-  color: black;
-  }
-
-.poisonhead{
-  background-color: #714397;
-}
-
-.psychichead{
-  background-color: #be5581;
-  color: black;
-}
-
-.rockhead{
-  background-color: #998e6c;
-  color: black;
-}
-
-.ghosthead{
-  background-color: #582d69;
-}
-
-.grasshead{
-  background-color: #2d7923;
-  color: black;
-}
-
-.groundhead{
-  background-color: #7a5c2d;
-  color: black;
-}
-
-.icehead{
-  background-color: #56bebe;
-  color: black;
-}
-
-.bughead{
-  background-color: #565711;
-}
-
-.darkhead{
-  background-color: #282906;
-}
-
-.dragonhead{
-  background-color: #5b54b9;
-  color: black;
-}
-
-.electrichead{
-  background-color: #c4b923;
-  color: black;
-}
-
-.fairyhead{
-  background-color: #c588c0;
-  color: black;
-}
-
-.fightinghead{
-  background-color: #d48e31;
-  color: black;
-}
-
-.firehead{
-  background-color: #b85731;
-  color: black;
-}
-
-.flyinghead{
-  background-color: #62b2d1;
-  color: black;
+  border-radius: 5px;
+  font-size: large;
+  text-align: center;
+  border: 3px solid black;
 }
 
 
 .goodmatch1{
   background-color: #3b6437;
   text-align: center;
-  border: 2px solid black;
+  font-size: large;
+  text-align: center;
   border-radius: 5px;
+  border: 3px solid black;
 }
 
 .goodmatch2{
-  background-color: #73a76e;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 5px;
+  text-align: right;
+  background-color: #c3d5c0;
+  border-radius: 5px 0px 0px 5px;
+  padding: 0;
+  line-height: 0;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.goodmatch3{
+  text-align: right;
+  background-color: #c3d5c0;
+  border-radius: 5px 0px 0px 5px;
+  padding: 0;
+  line-height: 0;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 .badmatch1{
   background-color: #7a2d2d;
   text-align: center;
-  border: 2px solid black;
+  font-size: large;
+  text-align: center;
   border-radius: 5px;
+  border: 3px solid black;
 }
 
 .badmatch2{
-  background-color: #b67575;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 5px;
+  text-align: left;
+  background-color: #c3d5c0;
+  border-radius: 0px 5px 5px 0px;
+  padding: 0;
+  line-height: 0;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.badmatch3{
+  text-align: left;
+  background-color: #c3d5c0;
+  border-radius: 0px 5px 5px 0px;
+  padding: 0;
+  line-height: 0;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 .sammy {
@@ -534,7 +514,6 @@ padding-top: 20px;
     color: #bfd6b7;
     font-weight: normal;
     text-align: center;
-    font-family: "bahnschrift";
     font-size: 2em;
     margin-top: 10px;
     border-radius: 5px;
